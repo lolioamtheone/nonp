@@ -1,0 +1,41 @@
+{
+  "name": "modmenu-pro",
+  "version": "1.0.0",
+  "description": "ModMenu Pro - Desktop Productivity Application",
+  "main": "main.js",
+  "homepage": "./",
+  "author": "ModMenu Pro Team",
+  "license": "MIT",
+  "scripts": {
+    "electron": "electron .",
+    "electron:dev": "NODE_ENV=development electron .",
+    "electron:pack": "electron-builder",
+    "start": "electron .",
+    "dev": "NODE_ENV=development electron ."
+  },
+  "build": {
+    "appId": "com.modmenupro.app",
+    "productName": "ModMenu Pro",
+    "directories": {
+      "output": "dist-electron"
+    },
+    "files": [
+      "main.js",
+      "electron/**/*",
+      "dist/**/*",
+      "client/dist/**/*"
+    ],
+    "mac": {
+      "category": "public.app-category.productivity",
+      "icon": "electron/assets/icon.icns"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "electron/assets/icon.ico"
+    },
+    "linux": {
+      "category": "Office",
+      "icon": "electron/assets/icon.png"
+    }
+  }
+}

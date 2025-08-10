@@ -1,0 +1,14 @@
+{
+  "name": "modmenu-pro-electron",
+  "version": "1.0.0",
+  "description": "ModMenu Pro - Desktop Productivity Application",
+  "main": "main.cjs",
+  "type": "commonjs",
+  "author": "ModMenu Pro Team",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "dev": "NODE_ENV=development electron .",
+    "build": "electron-builder"
+  }
+}
